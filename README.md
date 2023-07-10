@@ -7,6 +7,9 @@ In a Python script, process_data.py, the input data is read and wrangled in term
 - Loads the messages.csv and categories.csv datasets
 - Merges the two datasets
 - Cleans the data
+  - split response column in 36 individual category columns and rename these
+  - convert category values to just numbers 0 or 1
+  - drop duplicates
 - Stores it in a SQLite database DisasterResponse.db
 
 2. ML Pipeline

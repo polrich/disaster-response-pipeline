@@ -71,9 +71,9 @@ This is how it looks like:
 Distribution of Message Genres: 
 ![Distribution of Message Genres](https://github.com/polrich/disaster-response-pipeline/blob/716c381c799e6e7eca85fdb688d457ba8c155041/app/dist_genres.png "Distribution of Message Genres")
 
-Distribution of Message Genres: 
-![Distribution of Message Genres](https://github.com/polrich/disaster-response-pipeline/blob/93c8f06209e57f2ed891ebb44c527b9094340278/app/dist_most.png "Distribution of Security/Military/Transport")
+Distribution of Security/Military/Transport: 
+![Distribution of Security/Military/Transport](https://github.com/polrich/disaster-response-pipeline/blob/93c8f06209e57f2ed891ebb44c527b9094340278/app/dist_some.png "Distribution of Security/Military/Transport")
 
-Distribution of Message Genres: 
-![Distribution of Message Genres](https://github.com/polrich/disaster-response-pipeline/blob/93c8f06209e57f2ed891ebb44c527b9094340278/app/dist_some.png "General Distribution")
+General Distribution: 
+![General Distribution](https://github.com/polrich/disaster-response-pipeline/blob/93c8f06209e57f2ed891ebb44c527b9094340278/app/dist_most.png "General Distribution")
 

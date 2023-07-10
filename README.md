@@ -69,7 +69,7 @@ Usage:
 This is how it looks like:
 
 Distribution of Message Genres: 
-![Distribution of Message Genres](https://github.com/polrich/disaster-response-pipeline/app/dist_genres.png "Distribution of Message Genres")
+![Distribution of Message Genres](https://github.com/polrich/disaster-response-pipeline/blob/716c381c799e6e7eca85fdb688d457ba8c155041/app/dist_genres.png "Distribution of Message Genres")
 
 Distribution of Message Genres: 
 ![alt text][logo]

@@ -149,8 +149,8 @@ df.duplicated().sum()
 # In[14]:
 
 
-engine = create_engine('sqlite:///disasters_clean.db')
-df.to_sql('disasters_clean', engine, index=False)
+engine = create_engine('sqlite:///DisasterResponse.db')
+df.to_sql('DisasterResponse', engine, index=False)
 
 
 # ### 8. Use this notebook to complete `etl_pipeline.py`

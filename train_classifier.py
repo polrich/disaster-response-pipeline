@@ -41,8 +41,8 @@ import pickle
 
 
 # load data from database
-engine = create_engine('sqlite:///disasters_clean.db')
-df = pd.read_sql_table('disasters_clean', con=engine) 
+engine = create_engine('sqlite:///DisasterResponse.db')
+df = pd.read_sql_table('DisasterResponse', con=engine) 
 
 X = df['message']
 Y = df[['related',

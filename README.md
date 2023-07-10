@@ -72,6 +72,8 @@ Distribution of Message Genres:
 ![Distribution of Message Genres](https://github.com/polrich/disaster-response-pipeline/blob/716c381c799e6e7eca85fdb688d457ba8c155041/app/dist_genres.png "Distribution of Message Genres")
 
 Distribution of Message Genres: 
-![alt text][logo]
+![Distribution of Message Genres](https://github.com/polrich/disaster-response-pipeline/blob/93c8f06209e57f2ed891ebb44c527b9094340278/app/dist_most.png "Distribution of Security/Military/Transport")
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+Distribution of Message Genres: 
+![Distribution of Message Genres](https://github.com/polrich/disaster-response-pipeline/blob/93c8f06209e57f2ed891ebb44c527b9094340278/app/dist_some.png "General Distribution")
+

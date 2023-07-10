@@ -42,10 +42,17 @@ def index():
     # TODO: Below is an example - modify to extract data for your own visuals
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
+
+    some_counts = df[['security','military','transport']].sum()
+    some_names = list(some_counts.index)
+
+    people_related = df.loc[:,'aid_related':'other_weather'].sum()
+    people_names = list(people_related.index)      
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
     graphs = [
+    # distribution of message genres
         {
             'data': [
                 Bar(
@@ -61,6 +68,43 @@ def index():
                 },
                 'xaxis': {
                     'title': "Genre"
+                }
+            }
+        },
+    # distribution of message genres
+        {
+            'data': [
+                Bar(
+                    x=some_names,
+                    y=some_counts
+                )
+            ],
+
+            'layout': {
+                'title': 'Distribution of Security/Military/Transport',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Category"
+                }
+            }
+        },
+        {
+            'data': [
+                Bar(
+                    x=people_names,
+                    y=people_related
+                )
+            ],
+
+            'layout': {
+                'title': 'General Distribution',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Category of Aids"
                 }
             }
         }
@@ -93,7 +137,7 @@ def go():
 
 
 def main():
-    app.run(host='0.0.0.0', port=3001, debug=True)
+    app.run(host='0.0.0.0', port=3000, debug=True)
 
 
 if __name__ == '__main__':

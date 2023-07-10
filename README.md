@@ -77,3 +77,9 @@ Distribution of Security/Military/Transport:
 General Distribution: 
 ![General Distribution](https://github.com/polrich/disaster-response-pipeline/blob/93c8f06209e57f2ed891ebb44c527b9094340278/app/dist_most.png "General Distribution")
 
+Example Message: 
+![Example Message](https://github.com/polrich/disaster-response-pipeline/blob/7bce2f0ae6ecd3fe7fbff354df91e8af00d1f76a/app/example_message.png "Example Message")
+
+Example Response: 
+![Example Response](https://github.com/polrich/disaster-response-pipeline/blob/7bce2f0ae6ecd3fe7fbff354df91e8af00d1f76a/app/example_response.png "Example Response")
+

@@ -65,3 +65,13 @@ Usage:
 3. Run the following command in the app's directory to run your web app. `python run.py`
 
 4. Go to http://0.0.0.0:3000/
+
+This is how it looks like:
+
+Distribution of Message Genres: 
+![Distribution of Message Genres](https://github.com/polrich/disaster-response-pipeline/app/dist_genres.png "Distribution of Message Genres")
+
+Distribution of Message Genres: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"

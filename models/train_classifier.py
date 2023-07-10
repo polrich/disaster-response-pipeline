@@ -28,6 +28,21 @@ import joblib
 import pickle
 
 def load_data(database_filepath):
+    '''
+    Input 
+    ----------
+    database_filepath
+
+    Output
+    ----------
+    Features X
+    Responses Y
+    category_names
+    
+    This functions takes the database_filepath as input and returns the dataframes
+    of features and responses and the response names 
+    '''
+    
     print('sqlite:///{}'.format(database_filepath))
     engine = create_engine('sqlite:///{}'.format(database_filepath))
     df = pd.read_sql_table('DisasterResponse', con=engine) 
@@ -41,6 +56,20 @@ def load_data(database_filepath):
 
 
 def tokenize(text):
+    '''   
+    Input
+    ----------
+    text
+
+    Output
+    -------
+    clean_tokens
+    
+    This function takes a text as input, here a feature i.e. message, replaces urls
+    with placeholders, tokenizes and lemmatizes the text and returns the clean token
+
+    '''
+    
     url_regex = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
 
 
@@ -60,6 +89,11 @@ def tokenize(text):
 
 
 def build_model():
+    '''
+    This function sets up the model as a sklearn pipeline containing a countvectorizer,
+    TfidTransformer and MultiOutputclassifier with RandomForest classifier.
+    GridSearchCV is used to find the best parameters for the model
+    '''
     pipeline = Pipeline([
         ('cvect', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
@@ -78,6 +112,17 @@ def build_model():
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
+    '''
+    Input
+    ----------
+    model 
+    X_test 
+    Y_test 
+    category_names 
+
+    Thos functions shows the f1 score, precision and recall for the test set for each category
+
+    '''
     Y_pred = model.predict(X_test)
     class_report = classification_report(Y_test, Y_pred, target_names=category_names)
     print(class_report)

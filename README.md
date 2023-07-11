@@ -1,5 +1,7 @@
-# Disaster Response Pipeline
-The aim is to set up a NLP and ML Pipeline for disaster response evaluation.
+# Context
+This project was created together with [Udacity](https://www.udacity.com/course/data-scientist-nanodegree--nd025) and [Figure Eight](https://appen.com/) to evaluate disaster related messages and cluster these into certain relevant categories. The target it to easily and quickly identify relevant information in the event of a disaster and the resulting flood of messages. 
+
+The aim is to set up a NLP and ML Pipeline for disaster response evaluation. In the end a Flask app shall demonstrate it's usage.
 The project contains in general 3 parts:
 
 1. ETL Pipeline

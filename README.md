@@ -2,6 +2,8 @@
 This project was created together with [Udacity](https://www.udacity.com/course/data-scientist-nanodegree--nd025) and [Figure Eight](https://appen.com/) to evaluate disaster related messages and cluster these into certain relevant categories. The target it to easily and quickly identify relevant information in the event of a disaster and the resulting flood of messages. 
 
 The aim is to set up a NLP and ML Pipeline for disaster response evaluation. In the end a Flask app shall demonstrate it's usage.
+
+# Content
 The project contains in general 3 parts:
 
 1. ETL Pipeline
@@ -27,7 +29,7 @@ In a Python script `train_classifier.py` a machine learning pipeline is written:
 A flask web app is used to visualize and test the pipeline
 
 
-Folder Structure:
+# Folder Structure:
 * app
     * | - templates
         * |- master.html 
@@ -46,7 +48,7 @@ Folder Structure:
 
 * README.md
 
-Installation:
+# Installation:
 This project requires Python 3 and the following libraries:
 
 ```
@@ -56,7 +58,7 @@ SQLlite Database Libraqries: SQLalchemy
 Web App and Data Visualization: Flask, Plotly
 ```
 
-Usage:
+# Usage:
 1. Clone this repository
 `git clone git@github.com:polrich/disaster-response-pipeline.git`
 
